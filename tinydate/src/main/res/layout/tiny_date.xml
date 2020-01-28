@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/calendar_img"
+            android:contentDescription="@string/calendar_background_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tinyDate_layout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tiny_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/selectedDate"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/yearText"
+                android:textSize="18sp"
+                android:paddingEnd="2dp"
+                android:paddingStart="0dp"
+                android:drawableEnd="@drawable/ic_drop_down"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginEnd="20dp"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:background="@drawable/border_bottom"
+            android:paddingBottom="10dp"
+            android:id="@+id/monthsRecyclerView"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/week_sun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/sun"
+                android:layout_weight="1"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/week_mon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/mon"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/week_tue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/tue"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/week_wed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/wed"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/week_thu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/Thu"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/week_fri"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/fri"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/week_sat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/sat"
+                android:textStyle="italic"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:id="@+id/tinyDate_recyclerView"/>
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textSize="18sp"
+            android:background="@null"
+            android:textColor="@color/orange"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:id="@+id/tinyDate_okButton"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

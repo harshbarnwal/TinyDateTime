@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TinyDateSample</string>
+    <string name="enter_year">Enter year</string>
+    <string name="enter_month">Enter Month</string>
+    <string name="enter_day">Enter Day</string>
+    <string name="select_date">Select Date</string>
+    <string name="date_format">Date Format : </string>
+    <string name="selected_date">Selected Date : </string>
+    <string name="selected_day">Selected Day :</string>
+    <string name="selected_month">Selected Month</string>
+    <string name="selected_month_number">Selected Month Number</string>
+    <string name="selected_year">Selected Year</string>
+</resources>

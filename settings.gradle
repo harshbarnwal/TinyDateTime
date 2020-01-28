@@ -1,0 +1,2 @@
+include ':app', ':tinydate'
+rootProject.name='TinyDateSample'

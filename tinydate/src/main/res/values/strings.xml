@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TinyDate</string>
+    <string name="mon">Mon</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="select_year">Select Year</string>
+    <string name="ok">OK</string>
+    <string name="calendar_background_image">Calendar Background image</string>
+</resources>
